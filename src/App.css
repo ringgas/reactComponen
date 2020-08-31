@@ -1,5 +1,12 @@
-.App {
-  text-align: center;
+
+
+.SeeAll{
+  float: right;
+}
+
+.pastcard{
+  display: flex;
+  justify-content: flex-start;
 }
 
 .App-logo {
@@ -36,3 +43,18 @@
     transform: rotate(360deg);
   }
 }
+
+.flex-container {
+  display: flex;
+  justify-content: start;
+ 
+}
+
+.flex-container > div {
+  
+padding-left: 100px;
+  
+  
+ 
+}
+
