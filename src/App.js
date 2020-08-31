@@ -39,10 +39,10 @@ function App() {
  
 
   <div class="flex-container">
-  <div> <PastCardd/></div>
+  <div> <PastCardd date="27 November 2017" event_desc="#39 JakartaJS April Meetup with Kumparan" attendees="139"/></div>
   
-  <div> <PastCardd/></div>
-  <div> <PastCardd/></div>  
+  <div> <PastCardd date="27 November 2017" event_desc="#38 JakartaJS April Meetup with Blibli" attendees="113"/></div>
+  <div> <PastCardd date="27 November 2017" event_desc="#37 JakartaJS April Meetup with Hacktiv8" attendees="110"/></div>  
 </div>
   
   

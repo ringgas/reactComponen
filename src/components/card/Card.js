@@ -31,7 +31,7 @@ const Card = () => {
                 </tr>
                 </table>
                
-                <Button/>
+                <Button buttonProps="Join us"/>
                 </div>
             </div>
         </div>
