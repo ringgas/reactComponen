@@ -13,13 +13,13 @@ function App() {
     <div className="App">
     
     < Navbar/>
-    < Card />
+    < Card location="Jakarta, Indonesia" members="1,078" organizer="Adhy Wiranata" />
     
     <h2>Next Meetup</h2>
 
-    < NextCardd/>
+    < NextCardd title="Awesome Meetup and event"/>
 
-    <h1>About Meetup</h1>
+    <h2>About Meetup</h2>
         <p> 
           Come and meet other developers interested in the JavaScript and its library in the Greater Jakarta area<br /><br />
           Twitter: @JakartaJS and we user the hashtag #jakartajs
@@ -31,7 +31,7 @@ function App() {
           <text className="SeeAll">See all</text><br />
         </div>
 
-    < Memberss />
+    < Memberss name="Adhy Wijaya" sum="1,041" />
 
     <h2>Past Meetup</h2> 
     <text className="SeeAll">See all</text><br />
@@ -39,10 +39,10 @@ function App() {
  
 
   <div class="flex-container">
-  <div> <PastCardd date="27 November 2017" event_desc="#39 JakartaJS April Meetup with Kumparan" attendees="139"/></div>
+  <div> <PastCardd date="27 November 2017" deskripsi="#39 JakartaJS April Meetup with Kumparan" went="139"/></div>
   
-  <div> <PastCardd date="27 November 2017" event_desc="#38 JakartaJS April Meetup with Blibli" attendees="113"/></div>
-  <div> <PastCardd date="27 November 2017" event_desc="#37 JakartaJS April Meetup with Hacktiv8" attendees="110"/></div>  
+  <div> <PastCardd date="27 November 2017" deskripsi="#38 JakartaJS April Meetup with Blibli  and other" went="113"/></div>
+  <div> <PastCardd date="27 November 2017" deskripsi="#37 JakartaJS April Meetup with Hacktiv8" went="110"/></div>  
 </div>
   
   

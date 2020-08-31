@@ -4,13 +4,13 @@ import Avatar from '../Avatar/Avatar';
 
 import  './nextcard.css';
 
-const NextCard = () => {
+const NextCard = (PropsNextCard) => {
     return(
         <div >
             <div className="NextCardMeetup">
                
                 <div className="NextCardMeetup2">
-                <b>Awesome Meetup and event</b><br />
+                <b>{PropsNextCard.title}</b><br />
             <p>25 January 2019</p>
             <br></br>
             <p>

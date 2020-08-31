@@ -14,10 +14,10 @@ const PastCard = (props) => {
                 <div className="PastCardcss2">
                 <b>{props.date}</b><br />
             <hr></hr>
-            <b>{props.event_desc}</b>
+            <b>{props.deskripsi}</b>
             <br></br>
-            <p>{props.attendees} &nbsp;<text className="went">went</text></p>
-            <Button buttonProps="View"/>
+            <p>{props.went} &nbsp;<text>went</text></p>
+            <Button buttonText="View"/>
                 </div>
             </div>
         </div>

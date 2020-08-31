@@ -1,24 +1,26 @@
 import React from 'react';
 
 
-import AvatarImages from '../../assets/images.png';
+import AvatarImages from '../../assets/00319942.jpg';
+import Avatar from '../Avatar/Avatar';
 
 import  './members.css';
 
-const MembersCard = () => {
+
+const MembersCard = (propsOrganizer) => {
     return(
         <div >
             <div className="CardMembers">
-                <div > <img src={AvatarImages} alt="Avatar" className="AvatarMembers"/></div>
+                <div > <Avatar src={AvatarImages} alt={AvatarImages} className="AvatarMembers"/></div>
                 
                 <div className="CardMembers2">
                 <h2>Organizers</h2>
                 <table>
                
                 <tr>
-                    <td>Adhy Wiranata</td>
+                    <td>{propsOrganizer.name}</td>
                     <td></td>
-                    <td>4 Others</td>
+                    <td>{propsOrganizer.sum}</td>
                 </tr>
                
                 </table>

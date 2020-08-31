@@ -1,14 +1,16 @@
 import React from 'react';
 
+
+import AvatarImages from  '../../assets/w644.jpg'
 import Avatar from '../Avatar/Avatar';
 import Button from '../Button/Button';
 import  './Card.css';
 
-const Card = () => {
+const Card = (PropsCard) => {
     return(
         <div >
             <div className="CardMeetup">
-                <div ><Avatar/></div>
+                <div ><Avatar src={AvatarImages} alt={AvatarImages}/></div>
                 
                 <div className="CardMeetup2">
                 <h2>Hacktiv8 Meetup</h2>
@@ -17,21 +19,21 @@ const Card = () => {
                 <tr>
                     <td>Location</td>
                     <td></td>
-                    <td>Jakarta, Indonesia</td>
+                    <td>{PropsCard.location}</td>
                 </tr>
                 <tr>
                 <td>Members</td>
                 <td></td>
-                 <td>1,078</td>
+                 <td>{PropsCard.members}</td>
                 </tr>
                 <tr>
                 <td>Organizers</td>
                 <td></td>
-                 <td>Adhy Wiranata</td>
+                 <td>{PropsCard.organizer}</td>
                 </tr>
                 </table>
                
-                <Button buttonProps="Join us"/>
+                <Button buttonText="Join us"/>
                 </div>
             </div>
         </div>
