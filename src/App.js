@@ -9,7 +9,31 @@ import Memberss from './components/Members/members';
 import PastCardd from './components/PastCard/pastcard';
 
 function App() {
+  const Pastcardview = [
+    {
+      id:1,
+      date: "27 November 2017",
+      deskripsi: "#39 JakartaJS April Meetup with Kumparan",
+      went:139,
+    },
+
+    {
+      id:2,
+      date: "27 November 2018",
+      deskripsi: "#39 JakartaJS April Meetup with Blibli",
+      went:169,
+    },
+    {
+      id:3,
+      date: "27 November 2019",
+      deskripsi: "#39 JakartaJS April Meetup with Hacktiv8",
+      went:213,
+    }
+  ]
+  
   return (
+
+    
     <div className="App">
     
     < Navbar/>
@@ -36,13 +60,11 @@ function App() {
     <h2>Past Meetup</h2> 
     <text className="SeeAll">See all</text><br />
 
- 
+    
 
   <div class="flex-container">
-  <div> <PastCardd date="27 November 2017" deskripsi="#39 JakartaJS April Meetup with Kumparan" went="139"/></div>
+  <div> <PastCardd data={Pastcardview}/></div>
   
-  <div> <PastCardd date="27 November 2017" deskripsi="#38 JakartaJS April Meetup with Blibli  and other" went="113"/></div>
-  <div> <PastCardd date="27 November 2017" deskripsi="#37 JakartaJS April Meetup with Hacktiv8" went="110"/></div>  
 </div>
   
   

@@ -6,20 +6,25 @@ import Button from '../Button/Button';
 
 import  './pastcard.css';
 
-const PastCard = (props) => {
+const PastCard = ({data}) => {
     return(
         <div >
-            <div className="PastCardcss">
+            {
+                data.map((item) =>(
+                    <div className="PastCardcss" id={item.id}>
                
                 <div className="PastCardcss2">
-                <b>{props.date}</b><br />
+                <b>{item.date}</b><br />
             <hr></hr>
-            <b>{props.deskripsi}</b>
+            <b>{item.deskripsi}</b>
             <br></br>
-            <p>{props.went} &nbsp;<text>went</text></p>
+            <p>{item.went} &nbsp;<text>went</text></p>
             <Button buttonText="View"/>
                 </div>
             </div>
+                ))
+            
+            }
         </div>
     )
 }
