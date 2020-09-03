@@ -1,17 +1,18 @@
 import React from 'react';
 
 
-import AvatarImages from '../../assets/00319942.jpg';
-import Avatar from '../Avatar/Avatar';
+import AvatarImagess from '../../assets/00319942.jpg';
+import AvatarMemberss from '../AvatarMembers/avatarmembers';
 
 import  './members.css';
+
 
 
 const MembersCard = (propsOrganizer) => {
     return(
         <div >
             <div className="CardMembers">
-                <div > <Avatar src={AvatarImages} alt={AvatarImages} className="AvatarMembers"/></div>
+                <div > < AvatarMemberss src={AvatarImagess} alt={AvatarImagess}/></div>
                 
                 <div className="CardMembers2">
                 <h2>Organizers</h2>
