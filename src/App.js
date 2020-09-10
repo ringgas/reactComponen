@@ -11,20 +11,20 @@ import PastCardd from './components/PastCard/pastcard';
 function App() {
   const Pastcardview = [
     {
-      id:1,
+      id:0,
       date: "27 November 2017",
       deskripsi: "#39 JakartaJS April Meetup with Kumparan",
       went:139,
     },
 
     {
-      id:2,
+      id:1,
       date: "27 November 2018",
       deskripsi: "#39 JakartaJS April Meetup with Blibli",
       went:169,
     },
     {
-      id:3,
+      id:2,
       date: "27 November 2019",
       deskripsi: "#39 JakartaJS April Meetup with Hacktiv8",
       went:213,
@@ -62,8 +62,9 @@ function App() {
 
     
 
-  <div class="flex-container">
-  <div> <PastCardd data={Pastcardview}/></div>
+  <div className="flex-container">
+  <PastCardd data={Pastcardview}/>
+  
   
 </div>
   

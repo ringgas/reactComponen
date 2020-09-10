@@ -1,6 +1,5 @@
-.PastCardcss{
-    display: flex;
-    justify-content: flex-start;
+.PastCardcsss{
+
     background-color: #c4c4c4;
    
     padding-block: 20px;
@@ -8,14 +7,12 @@
     margin-left: 10px;
     padding-left: 1px;
     margin-top: 10px;
-    
-    
-   
+
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  transition: 0.3s;
+    transition: 0.3s;
     
 }
 .PastCardcss2{
-    padding-left: 3px;
+    padding-left: 10px;
 }
 

@@ -46,15 +46,11 @@
 
 .flex-container {
   display: flex;
-  justify-content: start;
+  justify-content:space-between;
  
 }
 
-.flex-container > div {
-  
-padding-left: 100px;
-  
-  
- 
-}
+
+
+
 
