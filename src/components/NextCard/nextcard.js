@@ -2,14 +2,16 @@ import React from 'react';
 
 
 
-import  './nextcard.css';
+import {
+    NextCardMeetup, NextCardMeetup2
+} from './nextcard.style';
 
 const NextCard = (PropsNextCard) => {
     return(
         <div >
-            <div className="NextCardMeetup">
+            <NextCardMeetup>
                
-                <div className="NextCardMeetup2">
+                <NextCardMeetup2>
                 <b>{PropsNextCard.title}</b><br />
             <p>25 January 2019</p>
             <br></br>
@@ -25,8 +27,8 @@ const NextCard = (PropsNextCard) => {
                Best, Hengki, Giovanni, Sofian, Riza, Agung The JakartaJS Organizers.
                
             </p>
-                </div>
-            </div>
+                </NextCardMeetup2>
+                </NextCardMeetup>
         </div>
     )
 }

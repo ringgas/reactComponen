@@ -1,13 +1,15 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
+import  {
+Buttoncomponent
+}
+from './Button.style';
 
-import './Button.css';
-
-const Button = ({buttonText}) => {
+const Button = (props) => {
     return(
         <div>
-        <button type="button" className="Buttonjs button2">{buttonText}</button> 
+        <Buttoncomponent primary={props.primary}>{props.text}</Buttoncomponent> 
         </div>
     );
 }

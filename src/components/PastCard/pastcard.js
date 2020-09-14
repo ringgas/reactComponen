@@ -2,9 +2,12 @@ import React from 'react';
 
 
 
-import Button from '../Button/Button';
+import Buttoncomponent from '../Button/Button';
 
-import  './pastcard.css';
+import  {
+ PastCardcsss, PastCardcss2   
+}
+    from './pascard.style';
 
 const PastCard = ({data}) => {
     return(
@@ -12,17 +15,17 @@ const PastCard = ({data}) => {
             {
                 data.map((item) =>(
                    
-                    <div className="PastCardcsss" key={item.id}>
+                    <PastCardcsss key={item.id}>
                
-                <div className="PastCardcss2">
+                <PastCardcss2>
                 <b>{item.date}</b><br />
             <hr></hr>
             <b>{item.deskripsi}</b>
             <br></br>
             <p>{item.went} &nbsp;<text>went</text></p>
-            <Button buttonText="View"/>
-                </div>
-            </div>
+            <Buttoncomponent primary="primary" text="View"/>
+                </PastCardcss2>
+            </PastCardcsss>
             
                 ))
             

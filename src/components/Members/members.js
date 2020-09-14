@@ -2,20 +2,23 @@ import React from 'react';
 
 
 import AvatarImagess from '../../assets/00319942.jpg';
-import AvatarMemberss from '../AvatarMembers/avatarmembers';
 
-import  './members.css';
+ import AvatarMemberss from '../AvatarMembers/avatarmembers';
+
+import  {
+    CardMembers, CardMembers2, Title
+} from './members.style';
 
 
 
 const MembersCard = (propsOrganizer) => {
     return(
         <div >
-            <div className="CardMembers">
-                <div > < AvatarMemberss src={AvatarImagess} alt={AvatarImagess}/></div>
+            <CardMembers>
+            <div > < AvatarMemberss src={AvatarImagess} alt={AvatarImagess}/></div>
                 
-                <div className="CardMembers2">
-                <h2>Organizers</h2>
+                <CardMembers2>
+                <Title>Organizers</Title>
                 <table>
                
                 <tr>
@@ -27,8 +30,8 @@ const MembersCard = (propsOrganizer) => {
                 </table>
                
                
-                </div>
-            </div>
+                </CardMembers2>
+            </CardMembers>
         </div>
     )
 }
